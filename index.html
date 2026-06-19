@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7KY | Streetwear Caps & Clothing</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="7KY - Marca premium de streetwear. Descubre nuestro primer drop exclusivo de gorras urbanas: Trucker Caps, Dad Hats y Beanies con fits y diseños modernos.">
+  <meta property="og:site_name" content="7KY Store">
+  <meta property="og:url" content="https://7ky.com/">
+  <meta property="og:title" content="7KY | Streetwear Caps & Clothing">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="7KY - Marca premium de streetwear. Descubre nuestro primer drop exclusivo de gorras urbanas: Trucker Caps, Dad Hats y Beanies.">
+  <meta property="og:image" content="./assets/banner_streetwear.png">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/cap_trucker_black.png">
+  <!-- Google Fonts: Outfit & Space Grotesk (Streetwear vibes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="color-scheme-dark">
+  <!-- Header -->
+  <header class="site-header" id="main-header">
+    <div class="header-container">
+      <a href="#" class="logo-link" id="logo-home">
+        <span class="logo-text">7KY</span>
+      </a>
+      
+      <nav class="main-navigation" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#catalog" class="nav-link" id="nav-link-caps">CAPS</a></li>
+          <li><a href="#coming-soon" class="nav-link" id="nav-link-remeras">REMERAS</a></li>
+          <li><a href="#brand" class="nav-link" id="nav-link-brand">7KY WORLD</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="cart-toggle-btn" id="cart-toggle-btn" aria-label="Abrir carrito">
+          <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count-badge" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="MainContent">
+    <!-- Hero Banner -->
+    <section class="hero-section" id="hero-banner">
+      <div class="hero-bg" style="background-image: linear-gradient(to top, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.4)), url('./assets/banner_streetwear.png');"></div>
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-in">DROP 01: OUT NOW</div>
+        <h1 class="hero-title animate-slide-up" id="hero-title-main">THE CAP<br>COLLECTION</h1>
+        <p class="hero-subtitle animate-fade-in">Diseño streetwear crudo para el día a día. Edición limitada.</p>
+        <div class="hero-actions-container">
+          <a href="#catalog" class="btn btn-primary" id="hero-cta-btn">EXPLORAR DROP</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Info Strip / Announcement Bar -->
+    <div class="announcement-strip">
+      <div class="strip-wrapper">
+        <div class="strip-text">ENVIOS A TODO EL PAÍS • STREETWEAR CULTURE • 7KY EXCLUSIVE • ENVIOS A TODO EL PAÍS • STREETWEAR CULTURE • 7KY EXCLUSIVE</div>
+        <div class="strip-text">ENVIOS A TODO EL PAÍS • STREETWEAR CULTURE • 7KY EXCLUSIVE • ENVIOS A TODO EL PAÍS • STREETWEAR CULTURE • 7KY EXCLUSIVE</div>
+      </div>
+    </div>
+    <!-- Product Catalog -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">NUESTROS GORROS</h2>
+          <p class="section-subtitle">Seleccionados y diseñados con materiales premium para máxima durabilidad.</p>
+        </div>
+        <!-- Catalog Filters -->
+        <div class="catalog-filters" id="catalog-filter-group">
+          <button class="filter-btn active" data-filter="all" id="filter-btn-all">Todos</button>
+          <button class="filter-btn" data-filter="trucker" id="filter-btn-trucker">Trucker</button>
+          <button class="filter-btn" data-filter="dadhat" id="filter-btn-dadhat">Dad Hats</button>
+          <button class="filter-btn" data-filter="beanie" id="filter-btn-beanie">Beanies</button>
+        </div>
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-grid-container">
+          <!-- Dynamic products injected here by app.js -->
+        </div>
+      </div>
+    </section>
+    <!-- Marquee Banner: Coming Soon -->
+    <section class="coming-soon-section" id="coming-soon">
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span>COMING SOON: REMERAS BOXY FIT // 7KY NEXT DROP // PRE-ORDER PRONTO // ESTILO EXCLUSIVO // COMING SOON: REMERAS BOXY FIT // 7KY NEXT DROP // PRE-ORDER PRONTO // ESTILO EXCLUSIVO</span>
+          <span>COMING SOON: REMERAS BOXY FIT // 7KY NEXT DROP // PRE-ORDER PRONTO // ESTILO EXCLUSIVO // COMING SOON: REMERAS BOXY FIT // 7KY NEXT DROP // PRE-ORDER PRONTO // ESTILO EXCLUSIVO</span>
+        </div>
+      </div>
+      <div class="coming-soon-details">
+        <div class="container">
+          <div class="coming-soon-card">
+            <h3>FUTURO DROP: REMERAS</h3>
+            <p>Algodón pesado de 240g, cuello grueso (rib rib), cortes boxy oversized. Mantente atento a nuestras redes para el lanzamiento.</p>
+            <div class="notify-box">
+              <input type="email" placeholder="Ingresa tu email para novedades" class="notify-input" id="notify-email-input">
+              <button class="btn btn-secondary" id="notify-submit-btn">AVÍSAME</button>
+            </div>
+            <div id="notify-feedback" class="notify-feedback"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Brand Identity Section -->
+    <section class="brand-section" id="brand">
+      <div class="container">
+        <div class="brand-grid">
+          <div class="brand-image-box">
+            <img src="./assets/banner_streetwear.png" alt="Estética 7KY" class="brand-img">
+            <div class="brand-img-overlay"></div>
+          </div>
+          <div class="brand-text-box">
+            <span class="brand-pretitle">SOBRE NOSOTROS</span>
+            <h3 class="brand-title">7KY CONCEPT</h3>
+            <p class="brand-desc">7KY no es solo una marca; es una declaración de intenciones. Nacidos del asfalto, del ritmo urbano y la cultura streetwear. Creamos piezas de edición limitada diseñadas para quienes buscan distinguirse con autenticidad.</p>
+            <p class="brand-desc">Nuestro enfoque está en la calidad de los materiales y los calces perfectos. Cada gorro de nuestra colección inicial representa la dedicación al detalle que nos define.</p>
+            <div class="brand-stats">
+              <div class="stat-item">
+                <span class="stat-num">01</span>
+                <span class="stat-label">Colección Inicial</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Algodón Heavyweight</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">AR</span>
+                <span class="stat-label">Origen Urbano</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Cart Drawer (Shopping Cart lateral) -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">TU PEDIDO</h3>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Cerrar carrito">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="cart-drawer-content" id="cart-items-container">
+      <!-- Cart items injected dynamically -->
+      <div class="cart-empty-message" id="cart-empty-msg">
+        <p>Tu carrito está vacío</p>
+        <a href="#catalog" class="btn btn-secondary" id="cart-empty-cta">Ver Gorros</a>
+      </div>
+    </div>
+    
+    <div class="cart-drawer-footer" id="cart-footer">
+      <div class="cart-summary-line">
+        <span>SUBTOTAL</span>
+        <span class="cart-total-price" id="cart-total-value">$0.00</span>
+      </div>
+      <p class="cart-checkout-hint">Los envíos y detalles de pago se acuerdan directamente por WhatsApp.</p>
+      <button class="btn btn-primary btn-checkout" id="cart-checkout-btn">
+        <span>PEDIR POR WHATSAPP</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+      </button>
+    </div>
+  </aside>
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quick-view-overlay">
+    <div class="modal-container" id="quick-view-modal">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar modal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="modal-content-grid" id="modal-content-container">
+        <!-- Dynamic content injected by app.js -->
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <span class="footer-logo">7KY</span>
+          <p class="footer-tagline">Streetwear Concept & Limited Drops</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/7ky.store" target="_blank" class="social-link" aria-label="Sígannos en Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Nuestra lista de reproducción">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"></path>
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="16" r="3"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col-links">
+          <h4 class="footer-col-title">INFO</h4>
+          <ul class="footer-links-list">
+            <li><a href="#" class="footer-link">Envíos & Entregas</a></li>
+            <li><a href="#" class="footer-link">Cambios & Devoluciones</a></li>
+            <li><a href="#" class="footer-link">Cuidado de prendas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col-newsletter">
+          <h4 class="footer-col-title">DROP ALERTS</h4>
+          <p>Suscribite para recibir notificaciones sobre nuevos drops antes que nadie.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Email" class="footer-input" id="footer-newsletter-input">
+            <button class="footer-btn-submit" id="footer-newsletter-btn">→</button>
+          </div>
+          <div id="footer-newsletter-feedback" class="notify-feedback"></div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 7KY. Todos los derechos reservados. Streetwear de Argentina.</p>
+        <p class="footer-credits">Diseñado por Antigravity</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Custom Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
